@@ -1,0 +1,37 @@
+.header {
+    height: rem(76px);
+    color: white !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .inner {
+    width: 100%;
+    height: rem(76px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .fullWidth {
+    padding: 20px;
+    margin: 0;
+    max-width: 100%;
+  }
+  
+  .link {
+    display: block;
+    line-height: 1;
+    padding: rem(8px) rem(12px);
+    border-radius: var(--mantine-radius-sm);
+    text-decoration: none;
+    color: #253a5f !important;
+    font-weight: 700;
+    font-size: var(--mantine-font-size-sm);
+  
+    @mixin hover {
+      background-color: #253a5f !important;
+      color: white !important;
+      scale: 1.25;
+      transition: all 0.2s ease-in-out;
+    }
+  }
