@@ -53,12 +53,12 @@ function normalizeJson(data) {
       try {
         // Send both requests concurrently
         const [mcqsResponse, fillInTheBlanksResponse] = await Promise.all([
-          axios.post("/api/generate-mcqs/", formData, {
+          axios.post("http://4.227.155.222:8090/generate-mcqs/", formData, {
             headers: {
               "Content-Type": "multipart/form-data",
             },
           }),
-          axios.post("/api/generate-fill-in-the-blank/", formData, {
+          axios.post("http://4.227.155.222:8090/generate-fill-in-the-blank/", formData, {
             headers: {
               "Content-Type": "multipart/form-data",
             },
